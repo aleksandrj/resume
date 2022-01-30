@@ -1,0 +1,192 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #475569;
+  margin-bottom: 4.8rem;
+}
+
+.profile-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4.8rem 0 3.2rem 0;
+}
+
+.profile-img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 3px;
+  border: 3px solid #fff;
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
+}
+
+.profile-position {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.section-about {
+  display: flex;
+  justify-content: center;
+  gap: 9.6rem;
+  position: relative;
+}
+
+.about,
+.skills {
+  width: 60%;
+}
+
+.section-about {
+  margin-bottom: 4.8rem;
+}
+
+.text-about {
+  padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+.section-about:after {
+  content: '';
+  background: #dee2e6;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  height: 1px;
+}
+
+.contacts,
+.languages {
+  width: 40%;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #475569;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-skills {
+  display: flex;
+  justify-content: center;
+  gap: 9.6rem;
+  position: relative;
+}
+
+.skill-bar {
+  height: 1.6rem;
+  background-color: #dee2e6;
+  position: relative;
+  border-radius: 12px;
+}
+
+.skill-title,
+.language-title {
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.language-title {
+  margin-bottom: 2rem;
+}
+
+.skill {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #475569;
+  border-radius: 12px;
+}
+
+.html-skill {
+  width: 80%;
+}
+
+.css-skill {
+  width: 70%;
+}
+
+.js-skill {
+  width: 65%;
+}
+
+.angular-skill {
+  width: 50%;
+}
+
+.skill-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.timeline-card {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.timeline-heading {
+  margin-left: 3.2rem;
+}
+
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: -0.6rem;
+  left: 0;
+  border: 5px solid #475569;
+  z-index: 2;
+}
+
+.timeline-body {
+  border-left: 2px solid #dee2e6;
+  padding: 0 0 2rem calc(2rem - 2px);
+  margin-left: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+@media print {
+  html {
+    font-size: 55%;
+  }
+
+  .section-experience {
+    padding-top: 15rem;
+  }
+}
